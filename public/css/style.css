@@ -249,6 +249,10 @@ body {
   padding: 20px 0 14px;
 }
 
+.escondido {
+  display: none;
+}
+
 .sidebar .sugestoes .sugestao {
   display: flex;
   justify-content: space-between;

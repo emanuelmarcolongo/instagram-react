@@ -1,3 +1,5 @@
+import React from "react"
+
 function Post(props) {
   return (
     <div class="post">
@@ -24,6 +26,7 @@ function Post(props) {
           </div>
           <div>
             <ion-icon name="bookmark-outline"></ion-icon>
+            <ion-icon class="escondido" name="bookmark"></ion-icon>
           </div>
         </div>
 
@@ -39,9 +42,10 @@ function Post(props) {
 }
 
 export default function Posts() {
+  const [salvar, setSalvar] = React.useState(false);
 
   const posts = [
-    { usuario: "meowd", imgUsuario: "assets/img/meowed.svg", imgConteudo: "assets/img/gato-telefone.svg", curtir1: "respondeai", curtir2: "outras 101.523 pessoas" },
+    { usuario: "meowd", imgUsuario: "assets/img/meowed.svg", imgConteudo: "assets/img/gato-telefone.svg", curtir1: "respondeai", curtir2: "outras 101.523 pessoas", salvar1:<ion-icon name="bookmark"></ion-icon>},
     { usuario: "meowd", imgUsuario: "assets/img/barked.svg", imgConteudo: "assets/img/dog.svg", curtir1: "respondeai", curtir2: "outras 101.523 pessoas" }
   ]
 
