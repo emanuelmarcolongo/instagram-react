@@ -271,6 +271,12 @@ body {
   height: 32px;
 }
 
+.red {
+  color: red;
+}
+
+
+
 .sidebar .sugestoes .seguir {
   color: #139EF2;
   font-weight: 600;
